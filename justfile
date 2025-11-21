@@ -21,19 +21,4 @@ format-check:
 
 format:
     npx prettier --write .
-
-format-all: format format-justfile format-nix
-
-format-justfile:
     just --unstable --fmt
-
-format-nix:
-    nixpkgs-fmt *.nix
-
-format-utils: format-justfile format-nix
-
-check-deps-versions:
-    npx ncu
-
-update-deps:
-    npx ncu --upgrade --target minor
