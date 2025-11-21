@@ -2,6 +2,7 @@
 	"name": "@ayka/tsconfig",
 	"description": "TypeScript configuration",
 	"version": "1.2.0",
+	"type": "module",
 	"files": [
 		"base.json",
 		"cjs.json",
@@ -14,8 +15,12 @@
 		"config",
 		"configuration"
 	],
+	"scripts": {
+		"prepack": "just prepack"
+	},
 	"devDependencies": {
 		"npm-check-updates": "^19.1.2",
-		"prettier": "^3.6.2"
+		"prettier": "^3.6.2",
+		"publint": "^0.3.15"
 	}
 }

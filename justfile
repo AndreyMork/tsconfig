@@ -22,3 +22,9 @@ format-check:
 format:
     npx prettier --write .
     just --unstable --fmt
+
+publint:
+    npx publint
+
+prepack:
+    -@just publint
