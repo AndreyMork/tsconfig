@@ -1,7 +1,7 @@
 {
 	"name": "@ayka/tsconfig",
 	"description": "TypeScript configuration",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"files": [
 		"base.json",
 		"cjs.json",
