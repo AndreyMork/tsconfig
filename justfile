@@ -27,4 +27,4 @@ publint:
     npx publint
 
 prepack:
-    -@just publint
+    @just publint
